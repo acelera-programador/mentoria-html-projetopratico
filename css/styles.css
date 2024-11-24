@@ -49,3 +49,20 @@ button {
 button:hover {
   background-color: #452e86;
 }
+
+.list-projetos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.projeto img {
+  width: 100%;
+  border-radius: 5px;
+}
