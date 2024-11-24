@@ -6,6 +6,7 @@ body {
   background-image: url('../img/banner2.png');
   background-size: cover;
   color: #333;
+  padding-bottom: 100px;
 }
 
 header {
@@ -83,6 +84,16 @@ textarea {
   font-size: 16px;
   line-height: 1.5;
   color: #495057;
-  border: 1px solid #ced4da;
   border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+footer {
+  background-color: #1f1441;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
