@@ -29,3 +29,29 @@ formContato.addEventListener('submit', function (event) {
 
   formContato.reset();
 });
+
+fetchRepositorios();
+
+function fetchRepositorios() {
+  const url = 'https://api.github.com/users/joaovdscostal/repos';
+
+  fetch(url)
+    .then((response) => response.json())
+    .then(function (repositorios) {
+      const repoList = document.getElementById('repositorio-list');
+
+      repositorios.forEach((repositorio) => {
+        const elementoMontado = `<div class="projeto-git">
+          <div><b>${repositorio.name}</b><br />${
+          repositorio.description ?? 'Sem descrição'
+        }</div>
+          <div class="botao-acesso"><a href="${
+            repositorio.html_url
+          }" target="_blank" class="button">Acessar</a></div>
+        </div>`;
+
+        repoList.innerHTML += elementoMontado;
+      });
+    })
+    .catch((err) => console.error(err));
+}

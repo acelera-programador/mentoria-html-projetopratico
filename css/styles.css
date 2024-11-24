@@ -38,13 +38,15 @@ section {
   border-radius: 5px;
 }
 
-button {
+button,
+a.button {
   background-color: #1f1441;
   color: #ffffff;
   border: 0px;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 button:hover {
@@ -96,4 +98,16 @@ footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
+}
+
+.projeto-git {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.botao-acesso {
+  display: flex;
+  align-items: center;
 }
