@@ -111,3 +111,34 @@ footer {
   display: flex;
   align-items: center;
 }
+
+.menu-toggle {
+  background: none;
+  font-size: 24px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .list-projetos {
+    grid-template-columns: 1fr;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  nav {
+    display: none;
+    background-color: #333333;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    text-align: center;
+    margin: 10px 0;
+  }
+  nav.active {
+    display: flex;
+  }
+}
